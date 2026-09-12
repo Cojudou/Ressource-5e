@@ -12,9 +12,9 @@
 <link rel="icon" href="icons/icone-192.png">
 <link rel="apple-touch-icon" href="icons/icone-192.png">
 <style>
-@font-face{font-family:Lexend;src:url(fonts/lexend-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:Lexend;src:url(fonts/lexend-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:Lexend;src:url(fonts/lexend-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:Lexend;src:url(fonts/lexend-latin-400-normal.woff2) format("woff2"),url(lexend-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Lexend;src:url(fonts/lexend-latin-500-normal.woff2) format("woff2"),url(lexend-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:Lexend;src:url(fonts/lexend-latin-700-normal.woff2) format("woff2"),url(lexend-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
 :root{
   --encre:#1D2330; --doux:#586273; --fond:#E6EAF0; --papier:#FFFFFF; --ligne:#D6DCE5;
   --juste:#23874A; --juste-f:#E2F4E8; --ocre:#A86D06; --ocre-f:#FBEFD6;
@@ -296,20 +296,33 @@ table.stats th{font-weight:500;color:var(--doux);font-size:13.5px;background:#FA
 window.R5E_DATA = [];
 function matiere(m){ window.R5E_DATA.push(m); }
 </script>
-<!-- Un fichier par matière. Pour modifier le contenu, on ne touche qu'aux fichiers du dossier data. -->
-<script src="data/francais.js"></script>
-<script src="data/maths.js"></script>
-<script src="data/anglais.js"></script>
-<script src="data/espagnol.js"></script>
-<script src="data/histoire.js"></script>
-<script src="data/geographie.js"></script>
-<script src="data/emc.js"></script>
-<script src="data/svt.js"></script>
-<script src="data/physique.js"></script>
-<script src="data/techno.js"></script>
-<script src="data/arts.js"></script>
-<script src="data/sport.js"></script>
-<script src="data/hygiene.js"></script>
-<script src="app.js"></script>
+<script>
+/* Chargement tolerant : les fichiers de matiere sont cherches dans data/ puis a la racine,
+   avec ou sans accents. app.js n'est lance qu'une fois les donnees chargees. */
+(function () {
+  var noms = ['francais','maths','anglais','espagnol','histoire','geographie','emc','svt','physique','techno','arts','sport','hygiene'];
+  var autres = { francais:['fran\u00e7ais'], geographie:['g\u00e9ographie'], hygiene:['hygi\u00e8ne'],
+                 maths:['mathematiques','math\u00e9matiques'], physique:['physique-chimie'], techno:['technologie'] };
+  var reste = noms.length, manquants = [];
+  function fini() {
+    if (--reste > 0) return;
+    if (manquants.length) window.R5E_MANQUANTS = manquants;
+    var a = document.createElement('script'); a.src = 'app.js'; document.body.appendChild(a);
+  }
+  noms.forEach(function (nom) {
+    var cands = [];
+    [nom].concat(autres[nom] || []).forEach(function (b) { cands.push('data/' + b + '.js'); cands.push(b + '.js'); });
+    var i = 0;
+    (function suivant() {
+      if (i >= cands.length) { manquants.push(nom); fini(); return; }
+      var s = document.createElement('script');
+      s.src = cands[i++];
+      s.onload = fini;
+      s.onerror = suivant;
+      document.head.appendChild(s);
+    })();
+  });
+})();
+</script>
 </body>
 </html>
