@@ -1,0 +1,17 @@
+{
+  "name": "Ressources 5e",
+  "short_name": "Ressources 5e",
+  "description": "Vidéos et podcasts rangés par matière pour la 5e.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#E6EAF0",
+  "theme_color": "#1D2330",
+  "icons": [
+    { "src": "icons/icone-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icone-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
