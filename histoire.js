@@ -36,6 +36,29 @@ matiere({
       ]
     },
     {
+      id: "hi-carolingiens",
+      titre: "Un Empire carolingien éphémère",
+      resume: "Charlemagne, du royaume des Francs à l'empire d'Occident. Chapitre en cours.",
+      savaisTu: [
+        "Éginhard, qui a écrit la vie de Charlemagne, raconte qu'il gardait des tablettes de cire sous son oreiller pour s'exercer à écrire la nuit : il s'y était mis trop tard et n'y est jamais vraiment arrivé.",
+        "Son prénom, Karl, a donné le mot « roi » dans plusieurs langues slaves : král en tchèque, król en polonais.",
+        "La chapelle qu'il a fait construire à Aix-la-Chapelle existe toujours. Sa forme à huit côtés s'inspire des églises byzantines, celles-là mêmes qu'on étudie dans la séance précédente."
+      ],
+      supports: [
+        { id: "hi-charlemagne", titre: "Charlemagne et l'Empire carolingien", type: "video", lien: "", etiquette: "decouvrir", noteParent: "Vidéo à récupérer : chercher sur Lumni ou sur une chaîne officielle un format court sur Charlemagne, du royaume des Francs au couronnement de 800." },
+        { id: "hi-couronnement", titre: "Le couronnement de l'an 800", type: "video", lien: "", etiquette: "consolider", noteParent: "Vidéo à récupérer, à ajouter seulement si la séance traite le couronnement par le pape." }
+      ],
+      quiz: [
+        { q: "En 768, Charlemagne hérite…", options: ["du royaume des Francs", "de l'Empire byzantin", "de la ville de Rome"], bonne: 0, explication: "Il hérite du royaume des Francs, que son père lui laisse.", point: "Charlemagne, roi des Francs", revoir: "hi-charlemagne", fixe: true },
+        { q: "À quelle famille appartient Charlemagne ?", options: ["Les Carolingiens", "Les Mérovingiens", "Les Capétiens"], bonne: 0, explication: "La famille des Carolingiens, qui donne son nom à tout l'empire.", point: "Charlemagne, roi des Francs", revoir: "hi-charlemagne" },
+        { q: "En 800, Charlemagne devient…", options: ["empereur d'Occident", "roi de Byzance", "pape"], bonne: 0, explication: "En 800, il devient le nouvel empereur d'Occident.", point: "Le couronnement de 800", revoir: "hi-couronnement", fixe: true },
+        { q: "Quel empire Charlemagne veut-il faire revivre ?", options: ["L'Empire romain", "L'empire d'Alexandre le Grand", "L'Empire ottoman"], bonne: 0, explication: "C'est la question de la séance : il se présente en restaurateur de l'Empire romain, comme Justinien avant lui.", point: "Un empereur héritier de Rome", revoir: "hi-charlemagne" },
+        { q: "Justinien et Charlemagne ont un point commun. Lequel ?", options: ["Tous deux se veulent les héritiers de l'Empire romain", "Tous deux ont régné sur Constantinople", "Tous deux ont vécu au même siècle"], bonne: 0, explication: "Deux empires chrétiens, deux empereurs qui se réclament de Rome, à deux siècles et demi d'écart.", point: "Un empereur héritier de Rome" },
+        { q: "« Éphémère », dans le titre de la séance, veut dire…", options: ["qui dure peu de temps", "très puissant", "très étendu"], bonne: 0, explication: "L'Empire carolingien ne survit pas longtemps à Charlemagne, contrairement à l'Empire byzantin, millénaire.", point: "Le vocabulaire de la séance" },
+        { q: "L'Empire byzantin, lui, est qualifié de…", options: ["millénaire", "éphémère", "romain d'Occident"], bonne: 0, explication: "Millénaire : il dure environ mille ans, de 395 à 1453.", point: "Le vocabulaire de la séance" }
+      ]
+    },
+    {
       id: "hi-islam",
       titre: "De la naissance de l'islam à la prise de Bagdad",
       resume: "La seconde partie du thème 1.",

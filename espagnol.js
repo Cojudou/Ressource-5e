@@ -29,6 +29,35 @@ matiere({
         { q: "« Miércoles » veut dire…", options: ["Mercredi", "Jeudi", "Vendredi"], bonne: 0, explication: "Miércoles : mercredi. Jueves : jeudi. Viernes : vendredi.", point: "Les jours et les mois" },
         { q: "« Domingo » veut dire…", options: ["Dimanche", "Samedi", "Lundi"], bonne: 0, explication: "Domingo : dimanche. Sábado : samedi.", point: "Les jours et les mois" }
       ]
+    },
+    {
+      id: "es-alfabeto",
+      titre: "El alfabeto español",
+      resume: "Dire les lettres, reconnaître les sons propres à l'espagnol, épeler.",
+      savaisTu: [
+        "L'espagnol a une lettre que le français n'a pas : la ñ. Son petit trait ondulé vient des copistes du Moyen Âge, qui écrivaient une seule n surmontée d'une barre pour éviter d'écrire nn.",
+        "En espagnol, le h ne se prononce jamais : hola se dit « ola », hoy se dit « oï ».",
+        "Jusqu'en 1994, ch et ll étaient rangées comme des lettres à part entière dans les dictionnaires espagnols. Elles sont maintenant classées avec le c et le l.",
+        "En Espagne, le z et le c devant e ou i se prononcent langue entre les dents, comme le th anglais. En Amérique latine, ils se prononcent comme un s."
+      ],
+      supports: [
+        { id: "es-alfabeto-video", titre: "L'alphabet espagnol en chanson", type: "video", lien: "", etiquette: "decouvrir", noteParent: "Vidéo à récupérer : chercher une vidéo qui dit ou chante les 27 lettres, sur une chaîne d'apprentissage de l'espagnol. Julie doit surtout entendre les noms des lettres." },
+        { id: "es-sons", titre: "Les sons propres à l'espagnol : j, ll, ñ, r roulé", type: "video", lien: "", etiquette: "consolider", noteParent: "Vidéo à récupérer : une vidéo de prononciation, plutôt qu'une leçon de grammaire." }
+      ],
+      quiz: [
+        { q: "Combien de lettres compte l'alphabet espagnol ?", options: ["27", "26", "25"], bonne: 0, explication: "Les 26 lettres de l'alphabet latin, plus la ñ.", point: "L'alphabet espagnol", revoir: "es-alfabeto-video", fixe: true },
+        { q: "Quelle lettre existe en espagnol et pas en français ?", options: ["ñ", "ç", "ß"], bonne: 0, explication: "La ñ, qu'on appelle « eñe ». On la trouve dans España, mañana, niño.", point: "L'alphabet espagnol", revoir: "es-alfabeto-video" },
+        { q: "Comment se prononce le h dans « hola » ?", options: ["Il ne se prononce pas", "Comme le h de « hamac »", "Comme un s"], bonne: 0, explication: "En espagnol, le h est toujours muet : on dit « ola ».", point: "Les sons de l'espagnol", revoir: "es-sons" },
+        { q: "Dans « Juan », le j se prononce…", options: ["comme un son raclé, venu du fond de la gorge", "comme le j de « jambe »", "comme un y"], bonne: 0, explication: "C'est le son de la jota, qu'on entend aussi dans José, trabajo, jugar.", point: "Les sons de l'espagnol", revoir: "es-sons" },
+        { q: "Dans « llama », le ll se prononce à peu près…", options: ["comme le y de « yoyo »", "comme un double l", "comme un j français"], bonne: 0, explication: "Llamar, lluvia, calle : le ll se dit comme un y dans la plupart des régions.", point: "Les sons de l'espagnol", revoir: "es-sons" },
+        { q: "« Deletrear » veut dire…", options: ["épeler", "lire à voix haute", "écrire vite"], bonne: 0, explication: "Deletrear : dire une à une les lettres d'un mot.", point: "Le vocabulaire de l'alphabet" },
+        { q: "« Las vocales », ce sont…", options: ["les voyelles", "les consonnes", "les accents"], bonne: 0, explication: "Las vocales : a, e, i, o, u. Las consonantes : les consonnes.", point: "Le vocabulaire de l'alphabet" },
+        { q: "« El sonido », c'est…", options: ["le son", "la lettre", "le mot"], bonne: 0, explication: "El sonido : le son. Une même lettre peut avoir plusieurs sons.", point: "Le vocabulaire de l'alphabet" },
+        { q: "En espagnol, « la tilde » désigne…", options: ["l'accent écrit sur une voyelle, comme dans camión", "le point sur le i", "la majuscule"], bonne: 0, explication: "La tilde, c'est l'accent écrit. Le petit trait ondulé de la ñ porte, lui, le nom de virgulilla.", point: "Le vocabulaire de l'alphabet" },
+        { q: "Comment épelle-t-on « hola » en espagnol ?", options: ["hache, o, ele, a", "h, o, l, a comme en français", "ache, o, elle, a"], bonne: 0, explication: "Le nom des lettres : h se dit hache, l se dit ele.", point: "Épeler en espagnol", revoir: "es-alfabeto-video", fixe: true },
+        { q: "La lettre ñ se dit…", options: ["eñe", "ene", "enio"], bonne: 0, explication: "Ene, c'est le n ordinaire ; eñe, c'est le n avec son trait ondulé.", point: "Épeler en espagnol", revoir: "es-alfabeto-video" },
+        { q: "Dans « perro », le rr se prononce…", options: ["roulé, bien appuyé", "comme un r français", "on ne le prononce pas"], bonne: 0, explication: "Le rr est roulé. Perro (le chien) et pero (mais) ne veulent pas dire la même chose.", point: "Les sons de l'espagnol", revoir: "es-sons" }
+      ]
     }
   ]
 });
