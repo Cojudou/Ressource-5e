@@ -300,7 +300,7 @@ function matiere(m){ window.R5E_DATA.push(m); }
 /* Chargement tolerant : les fichiers de matiere sont cherches dans data/ puis a la racine,
    avec ou sans accents. app.js n'est lance qu'une fois les donnees chargees. */
 (function () {
-  var noms = ['francais','maths','anglais','espagnol','histoire','geographie','emc','svt','physique','techno','arts','sport','hygiene'];
+  var noms = ['francais','maths','anglais','espagnol','histoire','geographie','emc','svt','physique','techno','arts','sport','hygiene','exposes'];
   var autres = { francais:['fran\u00e7ais'], geographie:['g\u00e9ographie'], hygiene:['hygi\u00e8ne'],
                  maths:['mathematiques','math\u00e9matiques'], physique:['physique-chimie'], techno:['technologie'] };
   var reste = noms.length, manquants = [];

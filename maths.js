@@ -32,6 +32,36 @@ matiere({
         { q: "Quelles sont les coordonnées de l'origine du repère ?", options: ["(0 ; 0)", "(1 ; 1)", "(0 ; 1)"], bonne: 0, explication: "L'origine est le point où les deux axes se croisent : abscisse 0 et ordonnée 0.", point: "Coordonnées dans un repère", revoir: "ma-repere" },
         { q: "Le point C(0 ; 5) se trouve…", options: ["sur l'axe des ordonnées", "sur l'axe des abscisses"], bonne: 0, explication: "Son abscisse vaut 0 : on ne bouge pas vers la gauche ni vers la droite, on reste sur l'axe vertical.", point: "Coordonnées dans un repère", revoir: "ma-coord" }
       ]
+    },
+    {
+      id: "ma-decimaux",
+      titre: "Multiplier et diviser par 10, 100, 0,1, 0,01",
+      resume: "Le déplacement de la virgule, et les automatismes du début de séance.",
+      savaisTu: [
+        "Multiplier par 0,1, c'est diviser par 10. Deux opérations qui semblent opposées donnent le même résultat : c'est ce qui rend la notion déroutante.",
+        "Le mot « décimal » vient du latin decem, dix. Tout notre système de nombres est construit sur des paquets de dix, et c'est pour cela que la virgule se déplace si simplement.",
+        "Une astuce de vérification qui ne trompe pas : si on multiplie par un nombre plus petit que 1, le résultat doit être plus petit que le nombre de départ. Si on divise par un nombre plus petit que 1, il doit être plus grand."
+      ],
+      supports: [
+        { id: "ma-mult01", titre: "Multiplier par 0,1", source: "Yvan Monka", type: "video", lien: "https://youtu.be/XFXZJgOcOzY", etiquette: "consolider", duree: "3 min", note: "Court et centré sur l'astuce : multiplier par 0,1 revient à diviser par 10." },
+        { id: "ma-mult10", titre: "Multiplier par 10, 100, 1000", source: "Yvan Monka", type: "video", lien: "https://youtu.be/pPnCPmWGqyo", etiquette: "consolider", duree: "4 min", note: "La règle des rangs, avant d'attaquer 0,1 et 0,01." }
+      ],
+      quiz: [
+        { q: "Multiplier un nombre par 0,1, c'est la même chose que…", options: ["le diviser par 10", "le multiplier par 10", "lui ajouter 10"], bonne: 0, explication: "0,1, c'est un dixième. Prendre un dixième d'un nombre, c'est le diviser par 10.", point: "Multiplier par 0,1", revoir: "ma-mult01", fixe: true },
+        { q: "Multiplier par 0,01, c'est…", options: ["diviser par 100", "diviser par 10", "multiplier par 100"], bonne: 0, explication: "0,01, c'est un centième : deux zéros dans 100, deux rangs vers la droite.", point: "Multiplier par 0,1", revoir: "ma-mult01", fixe: true },
+        { q: "Diviser par 0,1, c'est…", options: ["multiplier par 10", "diviser par 10", "multiplier par 0,1"], bonne: 0, explication: "Combien de dixièmes dans un nombre ? Dix fois plus : le résultat grandit.", point: "Diviser par 0,1", fixe: true },
+        { q: "592 × 0,1 = …", options: ["59,2", "5920", "5,92"], bonne: 0, explication: "On divise par 10 : la virgule recule d'un rang.", point: "Multiplier par 0,1", revoir: "ma-mult01" },
+        { q: "63 × 0,01 = …", options: ["0,63", "6,3", "630"], bonne: 0, explication: "Divisé par 100 : deux rangs vers la droite.", point: "Multiplier par 0,1", revoir: "ma-mult01" },
+        { q: "1,2 × 0,001 = …", options: ["0,0012", "0,12", "1200"], bonne: 0, explication: "Trois zéros dans 1000, donc trois rangs.", point: "Multiplier par 0,1" },
+        { q: "51 : 0,01 = …", options: ["5100", "0,51", "510"], bonne: 0, explication: "Diviser par 0,01 revient à multiplier par 100.", point: "Diviser par 0,1" },
+        { q: "5,2 : 0,1 = …", options: ["52", "0,52", "520"], bonne: 0, explication: "Diviser par 0,1 revient à multiplier par 10.", point: "Diviser par 0,1" },
+        { q: "312 × 0,001 et 312 : 1000 donnent…", options: ["le même résultat : 0,312", "des résultats différents", "0,312 et 312 000"], bonne: 0, explication: "C'est exactement la même opération, écrite de deux façons.", point: "Multiplier par 0,1" },
+        { q: "On multiplie 45 par 0,1. Le résultat sera…", options: ["plus petit que 45", "plus grand que 45", "égal à 45"], bonne: 0, explication: "Multiplier par un nombre plus petit que 1 fait toujours diminuer. C'est le meilleur moyen de vérifier qu'on ne s'est pas trompé de sens.", point: "Vérifier son résultat", fixe: true },
+        { q: "On divise 45 par 0,1. Le résultat sera…", options: ["plus grand que 45", "plus petit que 45", "égal à 45"], bonne: 0, explication: "Diviser par un nombre plus petit que 1 fait toujours grandir.", point: "Vérifier son résultat", fixe: true },
+        { q: "21,23 × 0,1 = …", options: ["2,123", "212,3", "0,2123"], bonne: 0, explication: "Un seul rang vers la droite.", point: "Multiplier par 0,1", revoir: "ma-mult01" },
+        { q: "6,3 : 100 = …", options: ["0,063", "0,63", "630"], bonne: 0, explication: "Deux rangs vers la droite : 6,3 devient 0,063.", point: "Diviser par 10 et 100", revoir: "ma-mult10" },
+        { q: "0,012 × 100 = …", options: ["1,2", "0,12", "12"], bonne: 0, explication: "Deux rangs vers la gauche.", point: "Diviser par 10 et 100", revoir: "ma-mult10" }
+      ]
     }
   ]
 });
