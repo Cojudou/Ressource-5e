@@ -1,0 +1,100 @@
+matiere({
+  id: "musique", nom: "Musique", couleur: "#C2185B", icone: "🎵",
+  chapitres: [
+    {
+      id: "mu-fiche",
+      titre: "La fiche d'écoute : le vocabulaire pour décrire une musique",
+      resume: "Nuance, tempo, caractère, formation, forme, style et époque.",
+      savaisTu: [
+        "Presque tout le vocabulaire de la musique est en italien : piano, forte, allegro, crescendo. C'est qu'au XVIIe siècle, l'Italie donnait le ton en Europe, et les compositeurs écrivaient leurs indications dans cette langue.",
+        "Le piano s'appelait au départ « pianoforte », littéralement « doux-fort » : c'était le premier clavier capable de jouer doucement ou fort selon la force du doigt. On a fini par ne garder que la première moitié du mot.",
+        "« Lento » veut dire lent et « presto » très rapide — mais « presto » veut simplement dire « vite » en italien, et c'est le même mot que dans « presto ! » quand un magicien fait apparaître quelque chose.",
+        "Un chœur d'enfants chante les mêmes notes que les voix de femmes : c'est pour cela qu'on parle de tessiture, la zone de hauteur dans laquelle une voix est à l'aise."
+      ],
+      missions: [
+        { titre: "Les nuances, de la plus douce à la plus forte", etapes: [
+          "pp, pianissimo : très doux.",
+          "p, piano : doux.",
+          "mf, mezzo forte : moyen. Mezzo veut dire « demi » en italien.",
+          "f, forte : fort.",
+          "ff, fortissimo : très fort.",
+          "Le signe qui s'ouvre, comme un bec ouvert : crescendo, de plus en plus fort.",
+          "Le signe qui se ferme : decrescendo, de moins en moins fort."
+        ] },
+        { titre: "Les époques, dans l'ordre", etapes: [
+          "Moyen Âge : du Ve au XVe siècle. Le chant grégorien.",
+          "Renaissance : XVIe siècle. Le luth.",
+          "Baroque : de 1600 à 1750. Le clavecin.",
+          "Classique : de 1750 à 1800. Le violon.",
+          "Romantique : XIXe siècle. Le piano.",
+          "Moderne : de 1900 à 1950. Le jazz.",
+          "Contemporain : depuis 1950."
+        ] },
+        { titre: "Les quatre tempos à connaître", etapes: [
+          "Lento : lent.",
+          "Moderato : modéré.",
+          "Allegro : rapide.",
+          "Presto : très rapide.",
+          "Astuce : ils sont déjà dans l'ordre, du plus lent au plus rapide."
+        ] }
+      ],
+      supports: [],
+      quiz: [
+        { q: "À quoi sert la nuance, dans une musique ?", options: ["À définir la puissance du son", "À définir la vitesse", "À définir l'émotion"], bonne: 0, explication: "La nuance, c'est fort ou doux. La vitesse, c'est le tempo.", point: "Ce qu'est une nuance" },
+        { q: "« pp » veut dire…", options: ["pianissimo : très doux", "piano : doux", "presto : très rapide"], bonne: 0, explication: "La lettre doublée renforce : p doux, pp très doux.", point: "Les nuances" },
+        { q: "« p » veut dire…", options: ["piano : doux", "pianissimo : très doux", "puissant"], bonne: 0, explication: "Piano veut dire doux en italien.", point: "Les nuances" },
+        { q: "« mf » veut dire…", options: ["mezzo forte : moyen", "molto forte : très fort", "mini forte"], bonne: 0, explication: "Mezzo veut dire « demi » : à mi-chemin entre doux et fort.", point: "Les nuances" },
+        { q: "« f » veut dire…", options: ["forte : fort", "fortissimo : très fort", "facile"], bonne: 0, explication: "Forte : fort. Avec deux f, c'est très fort.", point: "Les nuances" },
+        { q: "« ff » veut dire…", options: ["fortissimo : très fort", "forte : fort", "finale"], bonne: 0, explication: "Comme pour le piano, la lettre doublée pousse la nuance à l'extrême.", point: "Les nuances" },
+        { q: "Range ces nuances de la plus douce à la plus forte.", options: ["pp, p, mf, f, ff", "p, pp, f, mf, ff", "ff, f, mf, p, pp"], bonne: 0, explication: "C'est l'ordre de la fiche : pianissimo, piano, mezzo forte, forte, fortissimo.", point: "Les nuances" },
+        { q: "« Crescendo » veut dire…", options: ["de plus en plus fort", "de moins en moins fort", "toujours à la même force"], bonne: 0, explication: "Le signe s'ouvre comme un bec : le son grandit.", point: "Crescendo et decrescendo" },
+        { q: "« Decrescendo » veut dire…", options: ["de moins en moins fort", "de plus en plus fort", "très doux d'un coup"], bonne: 0, explication: "Le signe se referme : le son diminue.", point: "Crescendo et decrescendo" },
+        { q: "À quoi sert le tempo ?", options: ["À caractériser la vitesse de la musique", "À définir la puissance du son", "À nommer les instruments"], bonne: 0, explication: "Tempo veut dire « temps » en italien.", point: "Ce qu'est le tempo" },
+        { q: "« Lento » veut dire…", options: ["lent", "modéré", "rapide"], bonne: 0, explication: "Le plus lent des quatre tempos de la fiche.", point: "Les tempos" },
+        { q: "« Moderato » veut dire…", options: ["modéré", "lent", "très rapide"], bonne: 0, explication: "Entre lento et allegro.", point: "Les tempos" },
+        { q: "« Allegro » veut dire…", options: ["rapide", "joyeux", "lent"], bonne: 0, explication: "Attention au piège : allegro veut bien dire « joyeux » en italien courant, mais en musique c'est un tempo rapide.", point: "Les tempos" },
+        { q: "« Presto » veut dire…", options: ["très rapide", "rapide", "modéré"], bonne: 0, explication: "Le plus rapide des quatre.", point: "Les tempos" },
+        { q: "Range ces tempos du plus lent au plus rapide.", options: ["lento, moderato, allegro, presto", "presto, allegro, moderato, lento", "moderato, lento, presto, allegro"], bonne: 0, explication: "C'est l'ordre de la fiche, et il est facile à retenir : L, M, A, P.", point: "Les tempos" },
+        { q: "Le caractère d'une musique, c'est…", options: ["l'émotion qu'elle dégage", "sa vitesse", "le nombre de musiciens"], bonne: 0, explication: "Joyeux, triste, militaire, féérique, royal, effrayant, serein, en colère : ce sont des caractères.", point: "Le caractère" },
+        { q: "Une musique « lugubre, funèbre, mélancolique » a un caractère…", options: ["triste", "serein", "joyeux"], bonne: 0, explication: "Ce sont des mots de la famille « triste » dans la fiche.", point: "Le caractère" },
+        { q: "Une musique « triomphante, victorieuse, martiale » a un caractère…", options: ["militaire", "royal", "féérique"], bonne: 0, explication: "Martial vient de Mars, le dieu de la guerre.", point: "Le caractère" },
+        { q: "Une musique « majestueuse, solennelle, noble, raffinée » a un caractère…", options: ["royal", "militaire", "serein"], bonne: 0, explication: "Royal : la musique des rois et des cérémonies.", point: "Le caractère" },
+        { q: "Une musique « magique, onirique, planante, mystérieuse » a un caractère…", options: ["féérique", "effrayant", "joyeux"], bonne: 0, explication: "Onirique veut dire « qui ressemble à un rêve ».", point: "Le caractère" },
+        { q: "Une musique « harmonieuse, calme, paisible, pastorale » a un caractère…", options: ["serein", "triste", "royal"], bonne: 0, explication: "Pastoral évoque la campagne et les bergers.", point: "Le caractère" },
+        { q: "À quoi sert la formation, dans une fiche d'écoute ?", options: ["À caractériser l'ensemble instrumental ou vocal", "À dire si la musique est rapide", "À dater le morceau"], bonne: 0, explication: "Combien de musiciens, et lesquels.", point: "La formation" },
+        { q: "Un musicien seul, c'est…", options: ["un soliste", "un duo", "un solo d'orchestre"], bonne: 0, explication: "Soliste : une seule personne.", point: "La formation" },
+        { q: "Trois musiciens, c'est…", options: ["un trio", "un duo", "un quatuor"], bonne: 0, explication: "Duo pour deux, trio pour trois, quatuor pour quatre.", point: "La formation" },
+        { q: "Quatre musiciens, c'est…", options: ["un quatuor", "un trio", "un quintette"], bonne: 0, explication: "Le quatuor à cordes est la formation la plus connue.", point: "La formation" },
+        { q: "Un grand ensemble d'instruments s'appelle…", options: ["un orchestre", "un chœur", "un quatuor"], bonne: 0, explication: "Orchestre de chambre, symphonique, de jazz, de variété, de rock.", point: "La formation" },
+        { q: "Un ensemble de chanteurs s'appelle…", options: ["un chœur", "un orchestre", "un soliste"], bonne: 0, explication: "Chœur d'enfants, de femmes, d'hommes, ou mixte.", point: "La formation" },
+        { q: "Quelles sont les trois tessitures de voix de femmes ?", options: ["Soprano, mezzo-soprano, alto", "Ténor, baryton, basse", "Soprano, ténor, basse"], bonne: 0, explication: "De la plus aiguë à la plus grave : soprano, mezzo-soprano, alto.", point: "Les tessitures de voix" },
+        { q: "Quelles sont les trois tessitures de voix d'hommes ?", options: ["Ténor, baryton, basse", "Soprano, mezzo-soprano, alto", "Ténor, alto, basse"], bonne: 0, explication: "De la plus aiguë à la plus grave : ténor, baryton, basse.", point: "Les tessitures de voix" },
+        { q: "Quelle est la voix de femme la plus aiguë ?", options: ["Soprano", "Alto", "Mezzo-soprano"], bonne: 0, explication: "L'alto est la plus grave des trois.", point: "Les tessitures de voix" },
+        { q: "Quelle est la voix d'homme la plus grave ?", options: ["Basse", "Ténor", "Baryton"], bonne: 0, explication: "Le ténor est le plus aigu, la basse la plus grave.", point: "Les tessitures de voix" },
+        { q: "La forme d'un morceau, c'est…", options: ["sa structure", "son émotion", "sa vitesse"], bonne: 0, explication: "Comment le morceau est découpé en parties.", point: "La forme" },
+        { q: "Une forme binaire, c'est…", options: ["AB : deux parties différentes", "ABA : trois parties", "un refrain et des couplets"], bonne: 0, explication: "Binaire comme « deux ».", point: "La forme" },
+        { q: "Une forme lied, c'est…", options: ["ABA : trois parties, l'élément central est différent et la dernière reprend la première", "AB : deux parties", "une suite de variations"], bonne: 0, explication: "On part, on change, on revient.", point: "La forme" },
+        { q: "Dans la forme « thème et variations »…", options: ["le thème est joué en premier, puis des variations de ce thème suivent", "le thème revient toujours identique", "il n'y a pas de thème"], bonne: 0, explication: "Même mélodie de départ, transformée à chaque fois.", point: "La forme" },
+        { q: "Un canon, c'est…", options: ["un chant répété et superposé en décalage", "un chant sans refrain", "un morceau très fort"], bonne: 0, explication: "Comme « Frère Jacques » chanté à plusieurs, chacun partant un peu après l'autre.", point: "La forme" },
+        { q: "Une forme rondo, c'est…", options: ["l'alternance entre un refrain et des couplets", "trois parties ABA", "un chant superposé"], bonne: 0, explication: "Le refrain revient entre les couplets, comme un cercle.", point: "La forme" },
+        { q: "Une forme strophique, c'est…", options: ["un chant sans refrain, uniquement composé de strophes", "un chant avec un refrain", "un morceau sans paroles"], bonne: 0, explication: "Que des couplets, aucun refrain.", point: "La forme" },
+        { q: "Lesquels de ces mots désignent des styles ?", options: ["Classique, jazz, rap, gospel", "Lento, allegro, presto", "Soprano, ténor, basse"], bonne: 0, explication: "Le style, c'est la famille de musique : classique, variété, jazz, blues, rock, rap, RnB, gospel, traditionnel, musique du monde, musique de film.", point: "Le style" },
+        { q: "On oppose la musique savante à…", options: ["la musique populaire", "la musique rapide", "la musique vocale"], bonne: 0, explication: "C'est la première opposition notée dans le cours.", point: "Le style" },
+        { q: "On oppose la musique sacrée à…", options: ["la musique profane", "la musique savante", "la musique moderne"], bonne: 0, explication: "Sacrée : liée à la religion. Profane : tout le reste.", point: "Le style" },
+        { q: "Le Moyen Âge en musique, c'est…", options: ["du Ve au XVe siècle", "le XVIe siècle", "de 1600 à 1750"], bonne: 0, explication: "C'est l'époque du chant grégorien.", point: "Les époques" },
+        { q: "Quel chant représente le Moyen Âge ?", options: ["Le chant grégorien", "Le jazz", "Le gospel"], bonne: 0, explication: "Un chant d'église, à une seule voix, sans instruments.", point: "Les époques" },
+        { q: "La Renaissance, c'est…", options: ["le XVIe siècle", "le XIXe siècle", "de 1750 à 1800"], bonne: 0, explication: "Son instrument emblématique est le luth.", point: "Les époques" },
+        { q: "Quel instrument représente la Renaissance ?", options: ["Le luth", "Le clavecin", "Le piano"], bonne: 0, explication: "Un instrument à cordes pincées, à la caisse bombée.", point: "Les époques" },
+        { q: "La période baroque va…", options: ["de 1600 à 1750", "de 1750 à 1800", "de 1900 à 1950"], bonne: 0, explication: "Son instrument emblématique est le clavecin.", point: "Les époques" },
+        { q: "Quel instrument représente le baroque ?", options: ["Le clavecin", "Le piano", "Le violon"], bonne: 0, explication: "Un clavier dont les cordes sont pincées, et non frappées comme au piano.", point: "Les époques" },
+        { q: "La période classique va…", options: ["de 1750 à 1800", "de 1600 à 1750", "de 1800 à 1900"], bonne: 0, explication: "Attention : « classique » désigne ici une période précise de cinquante ans, pas toute la musique savante.", point: "Les époques" },
+        { q: "La période romantique, c'est…", options: ["le XIXe siècle", "le XVIe siècle", "depuis 1950"], bonne: 0, explication: "Son instrument emblématique est le piano.", point: "Les époques" },
+        { q: "Quel instrument représente le romantisme ?", options: ["Le piano", "Le luth", "Le clavecin"], bonne: 0, explication: "Le piano permet de jouer très doux et très fort : c'est ce qui plaisait aux romantiques.", point: "Les époques" },
+        { q: "La période moderne va…", options: ["de 1900 à 1950", "de 1850 à 1900", "depuis 1950"], bonne: 0, explication: "C'est l'époque où le jazz apparaît.", point: "Les époques" },
+        { q: "Quelle musique représente la période moderne ?", options: ["Le jazz", "Le chant grégorien", "Le rock"], bonne: 0, explication: "Le saxophone de la fiche, c'est le jazz.", point: "Les époques" },
+        { q: "La période contemporaine, c'est…", options: ["depuis 1950", "depuis 1900", "depuis 2000"], bonne: 0, explication: "C'est la période dans laquelle nous sommes encore.", point: "Les époques" },
+        { q: "Range ces périodes dans l'ordre.", options: ["Moyen Âge, Renaissance, baroque, classique, romantique, moderne, contemporain", "Moyen Âge, baroque, Renaissance, classique, romantique, moderne", "Renaissance, Moyen Âge, classique, baroque, moderne, romantique"], bonne: 0, explication: "Sept périodes, du Ve siècle à aujourd'hui.", point: "Les époques" }
+      ]
+    }
+  ]
+});
